@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@0;1&family=Lato:ital,wght@0,700;1,700&family=Nanum+Gothic&family=Playpen+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fira+Sans+Condensed:ital@0;1&family=Lato:ital,wght@0,700;1,700&family=Nanum+Gothic&family=Playpen+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,800&display=swap');
+
+:root {
+  --navbar-bg: linear-gradient(
+    to bottom, 
+    #e6e6e6 50%, 
+    #c9c9c9,
+    #adadad, 
+    #929292,
+    #787878);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +25,32 @@ html {
 
 body {
   height: 100%;
+  font-size: 1.8rem;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main-heading {
+  font-family: 'Dosis', sans-serif;
+  font-style: 3em;
+  position: relative;
+}
+
+.bg-wrapper {
+  background: url("/assets/img/bg01.jpg");
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.navbar {
+  height: auto;
+  width: 100%;
+  background-image: var(--navbar-bg);
+}
+
+.lorem {
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: left;
 }
