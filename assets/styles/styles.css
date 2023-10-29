@@ -4,11 +4,11 @@
 :root {
   --navbar-bg: linear-gradient(
     to bottom, 
-    #e6e6e6 50%, 
-    #c9c9c9,
-    #adadad, 
-    #929292,
-    #787878);
+    rgba(230, 230, 230, .97), 
+    rgba(180, 180, 180, .97)
+      );
+  --shadow: 0 .4rem .8rem rgba(255, 255, 255, .3);
+  --border-pattern: .5rem solid rgba(168, 166, 166, 0.95);
 }
 
 * {
@@ -27,12 +27,19 @@ body {
   height: 100%;
   font-size: 1.8rem;
   font-family: 'Nanum Gothic', sans-serif;
+  overflow-x: hidden;
 }
 
 .main-heading {
   font-family: 'Dosis', sans-serif;
-  font-style: 3em;
-  position: relative;
+  color: #eee;
+  text-shadow: var(--shadow);
+  font-size: 5em;
+  position: absolute;
+  margin: 0 auto;
+  top: 15%;
+  right: 10%;
+  text-align: center;
 }
 
 .bg-wrapper {
@@ -41,16 +48,56 @@ body {
   width: 100vw;
   overflow: hidden;
   background-size: cover;
+  margin-bottom: 5rem;
 }
 
+/* NAVBAR SETTINGS */
 .navbar {
-  height: auto;
+  max-height: 10rem;
   width: 100%;
   background-image: var(--navbar-bg);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: .5rem solid rgba(245, 245, 245, .8);
+  z-index: 1;
+  position: fixed;
 }
 
+.navbar__list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__list a {
+  display: block;
+  text-decoration: none;
+  padding: .5rem;
+  margin: 1rem 2rem;  
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(23, 29, 54, .8);
+}
+
+h2 img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  background-size: contain;
+  border: .5rem solid rgba(168, 166, 166, 0.8);
+}
+/* NAVBAR SETTINGS */
 .lorem {
   max-width: 120rem;
   margin: 0 auto;
   text-align: left;
 }
+
+.lorem p {
+  margin: 2.5rem;
+  padding: 1.5rem;
+}
+
