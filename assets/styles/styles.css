@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fira+Sans+Condensed:ital@0;1&family=Lato:ital,wght@0,700;1,700&family=Nanum+Gothic&family=Playpen+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,800&display=swap');
 
 :root {
-  --navbar-bg: linear-gradient(
+  --navbar-dark-bg: linear-gradient(
     to bottom, 
-    rgba(230, 230, 230, .97), 
-    rgba(180, 180, 180, .97)
+    rgba(25, 25, 25, 1),
+    rgba(35, 35, 35, 1)
       );
+  --navbar-light-bg: linear-gradient(
+    to bottom, 
+    rgba(230, 230, 230, 1), 
+    rgba(180, 180, 180, 1)
+      );
+  --navbar-fontDark-color: rgba(230, 230, 230, .8);
+  --navbar-fontLight-color: rgba(23, 29, 54, .8);
   --shadow: 0 .4rem .8rem rgba(255, 255, 255, .3);
-  --border-pattern: .5rem solid rgba(168, 166, 166, 0.95);
+  --border-pattern: .5rem solid rgba(168, 166, 166, 1);
 }
 
 * {
@@ -55,7 +62,7 @@ body {
 .navbar {
   max-height: 10rem;
   width: 100%;
-  background-image: var(--navbar-bg);
+  background-image: var(--navbar-light-bg);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -79,7 +86,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(23, 29, 54, .8);
+  color: var(--navbar-fontLight-color);
 }
 
 h2 img {
@@ -89,7 +96,14 @@ h2 img {
   background-size: contain;
   border: .5rem solid rgba(168, 166, 166, 0.8);
 }
+
+.navbar__list a:hover,
+h2 img:hover {
+  opacity: .7;
+}
 /* NAVBAR SETTINGS */
+
+
 .lorem {
   max-width: 120rem;
   margin: 0 auto;
