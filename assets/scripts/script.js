@@ -10,3 +10,4 @@ document.addEventListener("scroll", () => {
 });
 
 // Note: The scrollHeight of my navbar will be always the same because it's has position:fixed;
+// "how to get which height element is in scrollbar in Javascript?"
