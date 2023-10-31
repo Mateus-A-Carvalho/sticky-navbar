@@ -50,7 +50,7 @@ body {
 }
 
 .bg-wrapper {
-  background: url("/assets/img/bg01.jpg");
+  background: url("../img/bg01.jpg");
   height: 100vh;
   width: 100vw;
   overflow: hidden;
