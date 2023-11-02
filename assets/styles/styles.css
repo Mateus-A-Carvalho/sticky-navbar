@@ -16,6 +16,8 @@
   --navbar-fontLight-color: rgba(23, 29, 54, .8);
   --shadow: 0 .4rem .8rem rgba(255, 255, 255, .3);
   --border-pattern: .5rem solid rgba(168, 166, 166, 1);
+  --logo-LightBorder: .5rem solid rgba(168, 166, 166, 0.8);
+  --logo-DarkBorder: .5rem solid rgba(23, 29, 54, .8);
 }
 
 * {
