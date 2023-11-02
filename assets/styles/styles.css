@@ -2,22 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fira+Sans+Condensed:ital@0;1&family=Lato:ital,wght@0,700;1,700&family=Nanum+Gothic&family=Playpen+Sans:wght@400;700&family=Raleway:ital,wght@0,700;1,800&display=swap');
 
 :root {
-  --navbar-dark-bg: linear-gradient(
-    to bottom, 
-    rgba(25, 25, 25, 1),
-    rgba(35, 35, 35, 1)
-      );
-  --navbar-light-bg: linear-gradient(
-    to bottom, 
-    rgba(230, 230, 230, 1), 
-    rgba(180, 180, 180, 1)
-      );
+  --navbar-dark-bg: rgba(25, 25, 25, 1);
+  --navbar-light-bg: rgba(230, 230, 230, 1);
   --navbar-fontDark-color: rgba(230, 230, 230, .8);
   --navbar-fontLight-color: rgba(23, 29, 54, .8);
   --shadow: 0 .4rem .8rem rgba(255, 255, 255, .3);
   --border-pattern: .5rem solid rgba(168, 166, 166, 1);
   --logo-LightBorder: .5rem solid rgba(168, 166, 166, 0.8);
   --logo-DarkBorder: .5rem solid rgba(23, 29, 54, .8);
+  --animation-time: .35s;
 }
 
 * {
@@ -64,7 +57,7 @@ body {
 .navbar {
   max-height: 10rem;
   width: 100%;
-  background-image: var(--navbar-light-bg);
+  background-color: var(--navbar-light-bg);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -73,6 +66,7 @@ body {
   border-bottom: .5rem solid rgba(245, 245, 245, .8);
   z-index: 1;
   position: fixed;
+  color: var(--navbar-fontLight-color);
 }
 
 .navbar__list {
@@ -88,7 +82,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--navbar-fontLight-color);
+  color: inherit;
 }
 
 h2 img {
@@ -102,6 +96,12 @@ h2 img {
 .navbar__list a:hover,
 h2 img:hover {
   opacity: .7;
+}
+
+.navbar, 
+.logo,
+.navbar__list {
+  transition: var(--animation-time);
 }
 /* NAVBAR SETTINGS */
 
