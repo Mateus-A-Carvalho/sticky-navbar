@@ -10,7 +10,7 @@
   --border-pattern: .5rem solid rgba(168, 166, 166, 1);
   --logo-LightBorder: .5rem solid rgba(168, 166, 166, 0.8);
   --logo-DarkBorder: .5rem solid rgba(23, 29, 54, .8);
-  --animation-time: .35s;
+  --animation-time: .25s;
 }
 
 * {
@@ -57,7 +57,7 @@ body {
 .navbar {
   max-height: 10rem;
   width: 100%;
-  background-color: var(--navbar-light-bg);
+  background-color: rgba(230, 230, 230, 1);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -66,7 +66,7 @@ body {
   border-bottom: .5rem solid rgba(245, 245, 245, .8);
   z-index: 1;
   position: fixed;
-  color: var(--navbar-fontLight-color);
+  color: rgba(23, 29, 54, .8);
 }
 
 .navbar__list {
