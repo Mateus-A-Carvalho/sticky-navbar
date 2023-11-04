@@ -1,14 +1,11 @@
 const navbarEl = document.querySelector('#navbar');
-const navbarHeight = navbarEl.scrollHeight;
+const navbarHeight = navbarEl.scrollHeight + 5;
 const logoEl = document.querySelector("#logo-img")
-const sectionEl = document.querySelector("#lorem-section").scrollHeight;
 const bgWrapperElHeight = document.querySelector(".bg-wrapper").scrollHeight;
 
-console.log(sectionEl);
 
 document.addEventListener("scroll", () => {
-  let pointToChange = bgWrapperElHeight - navbarHeight - 5;
-  console.log(pointToChange, scrollY);
+  let pointToChange = bgWrapperElHeight - navbarHeight;
   
   if(scrollY >= pointToChange) {
     navbarEl.style.backgroundColor = "rgba(25, 25, 25, 1)";
